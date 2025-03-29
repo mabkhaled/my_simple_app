@@ -11,10 +11,20 @@ class AuthWrapper extends StatelessWidget {
     return StreamBuilder<User?>(
       stream: FirebaseAuth.instance.authStateChanges(),
       builder: (context, snapshot) {
-        if (snapshot.connectionState == ConnectionState.active) {
-          return snapshot.hasData ? PostListScreen() : AuthScreen();
+        // Show loading indicator while connection state is not active
+        if (snapshot.connectionState != ConnectionState.active) {
+          return const Scaffold(
+            body: Center(child: CircularProgressIndicator()),
+          );
         }
-        return const Scaffold(body: Center(child: CircularProgressIndicator()));
+
+        // If we have user data, they're logged in - go to posts
+        if (snapshot.hasData) {
+          return const PostListScreen();
+        }
+
+        // Otherwise, show authentication screen
+        return const AuthScreen();
       },
     );
   }
