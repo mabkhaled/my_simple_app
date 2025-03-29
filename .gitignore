@@ -1,0 +1,24 @@
+# Flutter/Dart specific ignores
+*.dart_tool/
+*.packages
+*.flutter-plugins
+*.flutter-plugins-dependencies
+build/
+pubspec.lock
+
+# Android related ignores
+android/.gradle/
+android/local.properties
+
+# iOS related ignores
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Generated.xcconfig
+
+# VS Code settings
+.vscode/
+
+# MacOS/Linux ignores
+macos/Pods/
+linux/.dart_tool/
+windows/.dart_tool/

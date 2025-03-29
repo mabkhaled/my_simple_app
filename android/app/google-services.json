@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "966698138855",
+    "project_id": "poste-vv",
+    "storage_bucket": "poste-vv.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966698138855:android:fc38e05b22238fac02b642",
+        "android_client_info": {
+          "package_name": "com.example.my_simple_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC64JiIFzuKJcJPn4iNlFF_6ngKVV_HtOk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
