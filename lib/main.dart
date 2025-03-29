@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'firebase_init.dart';
+import 'auth_wrapper.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await initializeFirebase();
   runApp(const MyApp());
 }
 
@@ -10,11 +14,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'My Simple App',
-      home: Scaffold(
-        appBar: AppBar(title: const Text('Welcome')),
-        body: const Center(child: Text('Ready for next step')),
-      ),
+      title: 'Auth Demo',
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: const AuthWrapper(),
     );
   }
 }

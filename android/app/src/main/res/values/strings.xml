@@ -1,0 +1,14 @@
+<resources>
+    <!-- From project_info -->
+    <string name="project_id">poste-vv</string>
+    <string name="google_storage_bucket">poste-vv.firebasestorage.app</string>
+    <string name="gcm_defaultSenderId">966698138855</string> <!-- project_number -->
+    
+    <!-- From client -->
+    <string name="google_app_id">1:966698138855:android:fc38e05b22238fac02b642</string>
+    <string name="google_api_key">AIzaSyC64JiIFzuKJcJPn4iNlFF_6ngKVV_HtOk</string>
+    
+    <!-- Optional (if using auth/database) -->
+    <string name="firebase_database_url">https://poste-vv.firebaseio.com</string>
+    <string name="default_web_client_id"></string> <!-- Leave empty if not using auth -->
+</resources>
