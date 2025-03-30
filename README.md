@@ -31,8 +31,8 @@ Enable Developer Options:
 
 #### Clone the Repository
 ```bash
-git clone https://github.com/yourusername/nextdata-app.git
-cd nextdata-app
+git clone https://github.com/mabkhaled/my_simple_app
+cd my_simple_app
 ```
 
 #### Install Dependencies
